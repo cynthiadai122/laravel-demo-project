@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Account;
+
+use App\Models\Account;
 
 class Accounts extends Controller
 {
-    function list(){
-        return "hello";
+    public function list(){
+        return var_dump(Account::all());
     }
 }
