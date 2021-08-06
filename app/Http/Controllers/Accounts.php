@@ -8,7 +8,7 @@ use App\Models\Account;
 
 class Accounts extends Controller
 {
-    public function list(){
-        return var_dump(Account::all());
+    public function list($id){
+        return Account::find($id);
     }
 }

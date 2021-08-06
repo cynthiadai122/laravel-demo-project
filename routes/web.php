@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('list', 'App\Http\Controllers\Accounts@list');
+Route::get('account-list/{id}', 'App\Http\Controllers\Accounts@list');
+Route::get('invoice-list/{tenantId}/{dateFrom}/{dateTo}', 'App\Http\Controllers\Invoices@list');
